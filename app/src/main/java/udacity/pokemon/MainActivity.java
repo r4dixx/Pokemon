@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
             String jsonString = "";
             try {
-                // TODO: make a request to the URL
+                jsonString = sh.makeHttpRequest(createUrl(url));
 
             } catch (IOException e) {
                 return null;
