@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             Log.e(TAG, "Response from url: " + jsonString);
             if (jsonString != null) {
                 try {
-                    //TODO: Create a new JSONObject
+                    JSONObject jsonObj = new JSONObject(jsonString);
 
                     // TODO: Get the JSON Array node and name it "pokemons"
 
